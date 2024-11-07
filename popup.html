@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog Reader</title>
+    <style>
+      body {
+        width: 300px;
+        padding: 20px;
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+      }
+      h1 {
+        color: #333;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      #instructions {
+        margin-bottom: 20px;
+        font-style: italic;
+        color: #666;
+        text-align: center;
+      }
+      button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        background-color: #52a4d5;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      button:hover {
+        background-color: #52a4d5;
+      }
+      button:disabled {
+        background-color: #cccccc;
+        cursor: not-allowed;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Blog Reader</h1>
+    <div id="instructions">
+      Highlight text on the page, then click 'Extract Text'
+    </div>
+    <button id="extractText">Extract Text</button>
+    <button id="startReading" disabled>Start Reading</button>
+    <button id="pauseReading" disabled>Pause</button>
+    <button id="stopReading" disabled>Stop</button>
+    <script src="popup.js"></script>
+  </body>
+</html>
